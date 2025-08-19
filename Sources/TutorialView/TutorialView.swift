@@ -172,7 +172,9 @@ public final class TutorialView: UIView {
         button.layer.cornerRadius = 5
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
-        button.setImage(UIImage(named: "reverseArrow"), for: .normal)
+        let img = UIImage(named: "reverseArrow", in: .module, compatibleWith: nil)?
+               .withRenderingMode(.alwaysTemplate)
+        button.setImage(img, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
