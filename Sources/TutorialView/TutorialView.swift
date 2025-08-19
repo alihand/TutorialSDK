@@ -34,7 +34,7 @@ extension TutorialStep {
 }
 
 // MARK: - Arrow View
-final class ArrowPointerView: UIView {
+public final class ArrowPointerView: UIView {
     private let shapeLayer = CAShapeLayer()
     var isFlipped: Bool = false {
         didSet { setNeedsLayout() }
