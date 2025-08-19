@@ -23,9 +23,9 @@ public struct TutorialStep {
  
 extension TutorialStep {
     public init(anchorView: UIView,
-         message: NSAttributedString,
+         attributedMessage message: NSAttributedString,
          arrowPosition: TutorialArrowPosition? = nil,
-         shouldContainerViewCornered: Bool = false) {
+         shouldContainerBeCornered shouldContainerViewCornered: Bool = false) {
         self.anchorView = anchorView
         self.message = message
         self.arrowPosition = arrowPosition
