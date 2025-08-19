@@ -20,7 +20,8 @@ let package = Package(
         .target(
             name: "TutorialView",
             resources: [
-                .process("Resources/Fonts")
+                .process("Resources/Fonts"),
+                .process("Resources/Assets.xcassets"),
             ]
         ),
         .testTarget(
