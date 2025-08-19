@@ -216,7 +216,7 @@ public final class TutorialView: UIView {
     }
 
     // MARK: - Layout
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
 
         let containerHeight = containerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
