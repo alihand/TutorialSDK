@@ -175,6 +175,7 @@ public final class TutorialView: UIView {
         let img = UIImage(named: "reverseArrow", in: .module, compatibleWith: nil)?
                .withRenderingMode(.alwaysTemplate)
         button.setImage(img, for: .normal)
+        button.tintColor = .black
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
