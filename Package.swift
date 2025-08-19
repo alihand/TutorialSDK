@@ -21,7 +21,7 @@ let package = Package(
             name: "TutorialView",
             resources: [
                 .process("Resources/Fonts"),
-                .process("Resources/Assets.xcassets"),
+                .process("Assets.xcassets")
             ]
         ),
         .testTarget(
