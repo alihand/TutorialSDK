@@ -9,18 +9,18 @@
 import UIKit
 
 // MARK: - Models
-enum TutorialArrowPosition {
+public enum TutorialArrowPosition {
     case top
     case bottom
 }
 
-struct TutorialStep {
+public struct TutorialStep {
     let anchorView: UIView
     let message: NSAttributedString
     var arrowPosition: TutorialArrowPosition? = nil
     var shouldContainerViewCornered: Bool = false
 }
-
+ 
 extension TutorialStep {
     init(anchorView: UIView,
          attributedMessage message: NSAttributedString,
@@ -398,7 +398,7 @@ final class TutorialView: UIView {
 
 // MARK: - Multi-step
 extension TutorialView {
-    static func show(steps: [TutorialStep],
+    public static func show(steps: [TutorialStep],
                      in containerView: UIView,
                      startIndex: Int = 0) {
         guard !steps.isEmpty, startIndex >= 0, startIndex < steps.count else { return }
