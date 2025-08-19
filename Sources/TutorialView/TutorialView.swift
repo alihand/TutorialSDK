@@ -34,7 +34,7 @@ extension TutorialStep {
 }
 
 // MARK: - Arrow View
-final class ArrowPointerView: UIView {
+public final class ArrowPointerView: UIView {
     private let shapeLayer = CAShapeLayer()
     var isFlipped: Bool = false {
         didSet { setNeedsLayout() }
@@ -51,7 +51,7 @@ final class ArrowPointerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         drawTriangle()
     }
@@ -156,7 +156,7 @@ public final class TutorialView: UIView {
         return label
     }()
 
-    lazy var actionButton: UIButton = {
+    private lazy var actionButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = TutorialFonts.medium(12)
