@@ -34,7 +34,7 @@ extension TutorialStep {
 }
 
 // MARK: - Arrow View
-public final class ArrowPointerView: UIView {
+final class ArrowPointerView: UIView {
     private let shapeLayer = CAShapeLayer()
     var isFlipped: Bool = false {
         didSet { setNeedsLayout() }
@@ -74,7 +74,7 @@ public final class ArrowPointerView: UIView {
 }
 
 // MARK: - Tutorial View
-final class TutorialView: UIView {
+public final class TutorialView: UIView {
 
     // MARK: - Properties
     private let arrowPosition: TutorialArrowPosition
