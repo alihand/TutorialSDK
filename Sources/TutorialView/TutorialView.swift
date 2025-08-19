@@ -22,7 +22,7 @@ public struct TutorialStep {
 }
  
 extension TutorialStep {
-    init(anchorView: UIView,
+    public init(anchorView: UIView,
          attributedMessage message: NSAttributedString,
          arrowPosition: TutorialArrowPosition? = nil,
          shouldCorner shouldContainerViewCornered: Bool = false) {
@@ -265,7 +265,7 @@ final class TutorialView: UIView {
     }
 
     // MARK: - Presentation
-    static func show(from anchorView: UIView,
+    public static func show(from anchorView: UIView,
                      in containerView: UIView,
                      message: NSAttributedString,
                      stepText: String? = nil,
