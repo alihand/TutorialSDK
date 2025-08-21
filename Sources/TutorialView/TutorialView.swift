@@ -152,6 +152,8 @@ public final class TutorialView: UIView {
         label.backgroundColor = .black
         label.textAlignment = .center
         label.clipsToBounds = true
+        label.layer.cornerCurve = .continuous
+        label.layer.cornerRadius = 11
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -239,8 +241,6 @@ public final class TutorialView: UIView {
                                  y: arrowPosition == .top ? 0 : containerView.frame.maxY,
                                  width: arrowWidth,
                                  height: arrowHeight)
-        
-        stepLabel.layer.cornerRadius = stepLabel.bounds.height / 2
     }
 
     // MARK: - Setup
